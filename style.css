@@ -960,6 +960,10 @@ a {
 
 @media(max-width:900px) {
 
+    .process-steps .principle-cards {
+        grid-template-columns: 1fr;
+    }
+
     .site-nav,
     .shell {
         width: min(100% - 48px, 720px)
