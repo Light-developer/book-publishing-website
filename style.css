@@ -1203,3 +1203,146 @@ a {
         animation: none
     }
 }
+
+/* Editorial imagery */
+.editorial-image{
+    margin:0;
+    position:relative;
+    overflow:hidden;
+    background:var(--paper);
+}
+.editorial-image img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:saturate(.82) contrast(1.02);
+    transition:transform 1.1s cubic-bezier(.2,.7,.2,1),filter .5s ease;
+}
+.editorial-image:hover img{
+    transform:scale(1.025);
+    filter:saturate(.95) contrast(1.02);
+}
+.editorial-image figcaption{
+    position:absolute;
+    left:22px;
+    bottom:20px;
+    padding:8px 11px;
+    background:rgba(7,26,51,.78);
+    color:rgba(255,255,255,.78);
+    font-size:.62rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    backdrop-filter:blur(10px);
+}
+.editorial-image-wide{
+    aspect-ratio:2.15/1;
+}
+.editorial-image-feature{
+    aspect-ratio:2.35/1;
+}
+.image-break-section{
+    padding:0 0 125px;
+    background:#fff;
+}
+.process-image{
+    margin-bottom:80px;
+}
+.books-image-section{
+    padding-top:0;
+    padding-bottom:90px;
+}
+.about-image-section{
+    padding-top:0;
+    padding-bottom:125px;
+}
+.editorial-author-image{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    min-height:430px;
+    background:var(--ink);
+    overflow:hidden;
+}
+.editorial-author-image img{
+    width:100%;
+    height:100%;
+    min-height:430px;
+    object-fit:cover;
+    filter:saturate(.75);
+}
+.editorial-author-image>div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+}
+.editorial-author-image .section-title{
+    color:#fff;
+    margin-top:20px;
+}
+.editorial-author-image .section-title em{
+    color:#d9c69f;
+}
+.authors-image-section{
+    padding-top:0;
+    padding-bottom:100px;
+}
+.editorial-image-contact{
+    aspect-ratio:1.25/1;
+    margin-top:42px;
+}
+.editorial-image-contact figcaption{
+    display:none;
+}
+
+@media(max-width:900px){
+    .editorial-image-wide{
+        aspect-ratio:1.65/1;
+    }
+    .editorial-author-image{
+        grid-template-columns:1fr;
+    }
+    .editorial-author-image img{
+        min-height:340px;
+        max-height:420px;
+    }
+    .editorial-author-image>div{
+        min-height:280px;
+        padding:42px;
+    }
+}
+
+@media(max-width:600px){
+    .image-break-section{
+        padding-bottom:85px;
+    }
+    .editorial-image-wide,
+    .editorial-image-feature{
+        aspect-ratio:1.15/1;
+    }
+    .editorial-image figcaption{
+        left:14px;
+        right:14px;
+        bottom:14px;
+        font-size:.55rem;
+    }
+    .process-image{
+        margin-bottom:55px;
+    }
+    .books-image-section,
+    .about-image-section,
+    .authors-image-section{
+        padding-bottom:70px;
+    }
+    .editorial-author-image img{
+        min-height:280px;
+    }
+    .editorial-author-image>div{
+        min-height:250px;
+        padding:30px;
+    }
+    .editorial-image-contact{
+        aspect-ratio:1.35/1;
+        margin-top:32px;
+    }
+}
