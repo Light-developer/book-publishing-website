@@ -8,7 +8,7 @@
   <title>Words — Books that remain.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -40,26 +40,65 @@
   </header>
 
   <main id="main">
-    <section class="relative flex min-h-screen items-end overflow-hidden pt-28" aria-labelledby="hero-title">
-      <div class="absolute inset-0"></div><div class="hero-glow absolute -right-32 top-16 h-[34rem] w-[34rem] rounded-full bg-blue/10 blur-3xl"></div><div class="hero-grid absolute inset-0 opacity-40"></div>
-      <div class="relative mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 lg:grid-cols-[1.15fr_.85fr] lg:px-10 lg:pb-24">
-        <div class="flex flex-col justify-end">
-          <p class="reveal mb-7 text-xs font-semibold uppercase tracking-[0.28em] text-blue" data-reveal>Independent publishing house · Est. 2026</p>
-          <h1 id="hero-title" class="reveal max-w-5xl font-display text-[clamp(4rem,11vw,9rem)] leading-[.84] tracking-[-.055em]" data-reveal>Books<br><em class="font-normal text-blue">that remain.</em></h1>
-          <div class="reveal mt-10 flex max-w-xl flex-col gap-7 sm:flex-row sm:items-end" data-reveal>
-            <p class="text-base leading-7 text-ink/65">We publish distinctive books by thoughtful people. Ideas worth returning to, stories worth carrying, and words made to outlive the moment.</p>
-            <a href="#books" class="group inline-flex shrink-0 items-center gap-3 text-sm font-semibold">Discover our list <span class="arrow-circle">↘</span></a>
+    <section class="hero-section relative min-h-screen overflow-hidden pt-28" aria-labelledby="hero-title">
+      <div class="hero-wash absolute inset-0"></div>
+      <div class="hero-glow absolute -right-40 top-12 h-[38rem] w-[38rem] rounded-full bg-blue/10 blur-3xl"></div>
+      <div class="hero-grid absolute inset-0 opacity-40"></div>
+
+      <div class="hero-content relative mx-auto grid min-h-[calc(100vh-7rem)] w-full max-w-7xl items-center gap-12 px-6 pb-20 lg:grid-cols-[1.02fr_.98fr] lg:px-10 lg:pb-16">
+        <div class="hero-copy">
+          <div class="reveal hero-kicker flex items-center gap-4" data-reveal data-delay="0">
+            <span class="h-px w-10 bg-gold"></span>
+            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-blue">Independent publishing house · Est. 2026</p>
+          </div>
+
+          <h1 id="hero-title" class="hero-title reveal mt-7 max-w-5xl font-display text-[clamp(4.4rem,10vw,8.5rem)] leading-[.8] tracking-[-.065em]" data-reveal data-delay="90">
+            <span class="hero-word">Books</span>
+            <span class="hero-word hero-word-accent"><em>that remain.</em></span>
+          </h1>
+
+          <div class="reveal mt-10 max-w-2xl" data-reveal data-delay="180">
+            <p class="hero-intro max-w-xl text-base leading-7 text-ink/65 sm:text-lg sm:leading-8">We publish distinctive books by thoughtful people. Ideas worth returning to, stories worth carrying, and words made to outlive the moment.</p>
+            <a href="#books" class="hero-cta group mt-8 inline-flex items-center gap-4 text-sm font-semibold">
+              <span>Discover our list</span>
+              <span class="arrow-circle">↘</span>
+            </a>
           </div>
         </div>
-        <div class="reveal relative flex items-end justify-center lg:justify-end" data-reveal>
-          <div class="book-stage"><div class="book-shadow"></div><div class="book-cover">
-            <div class="book-mark">W</div>
-            <div><p class="text-[10px] uppercase tracking-[.35em] text-white/60">Words Editions</p><h2 class="mt-7 max-w-[10rem] font-display text-4xl leading-[.95] text-white">The Quiet<br>Architecture<br><i>of Time</i></h2></div>
-            <div class="flex items-end justify-between"><span class="text-[9px] uppercase tracking-[.25em] text-white/50">A study in living</span><span class="font-display text-lg text-gold">01</span></div>
-          </div></div>
+
+        <div class="reveal relative flex items-center justify-center lg:justify-end" data-reveal data-delay="230">
+          <div class="hero-book-orbit" aria-hidden="true"></div>
+          <div class="book-stage" aria-label="Featured Words edition: The Quiet Architecture of Time">
+            <div class="book-shadow"></div>
+            <div class="book-back"></div>
+            <div class="book-cover">
+              <div class="book-spine"></div>
+              <div class="book-cover-top">
+                <div class="book-mark">W</div>
+                <span class="book-edition">Words Editions</span>
+              </div>
+              <div class="book-cover-title">
+                <span class="book-overline">A study in living</span>
+                <h2>The Quiet<br>Architecture<br><i>of Time</i></h2>
+              </div>
+              <div class="book-cover-bottom">
+                <span>01 · First edition</span>
+                <span class="book-glyph">W</span>
+              </div>
+              <div class="book-sheen"></div>
+            </div>
+          </div>
+          <div class="book-caption">
+            <span class="book-caption-line"></span>
+            <span>Featured edition</span>
+            <span class="text-ink/30">01</span>
+          </div>
         </div>
       </div>
-      <div class="absolute bottom-7 left-1/2 hidden -translate-x-1/2 items-center gap-3 text-[10px] uppercase tracking-[.25em] text-ink/40 lg:flex"><span class="h-10 w-px bg-ink/20"></span> Scroll to explore</div>
+
+      <div class="hero-footer absolute bottom-7 left-1/2 hidden -translate-x-1/2 items-center gap-3 text-[10px] uppercase tracking-[.25em] text-ink/40 lg:flex">
+        <span class="scroll-line"></span> Scroll to explore
+      </div>
     </section>
 
     <section id="books" class="border-y border-line bg-white" aria-labelledby="books-title">
