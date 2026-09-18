@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Words — an independent publishing house for books with lasting ideas, exceptional voices, and beautiful form.">
+  <meta name="theme-color" content="#071A33">
+  <title>Words — Books that remain.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink:'#071A33', blue:'#123F7A', paper:'#F8F6F1', mist:'#EEF4FA', line:'#D9E1EA', gold:'#B8955A' },
+          fontFamily: { sans:['DM Sans','sans-serif'], display:['Playfair Display','serif'] }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-paper text-ink antialiased">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10" aria-label="Main navigation">
+      <a href="#" class="font-display text-3xl font-semibold tracking-tight">Words<span class="text-gold">.</span></a>
+      <div class="hidden items-center gap-10 md:flex">
+        <a class="nav-link" href="#books">Books</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#authors">Authors</a><a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <a href="#books" class="hidden rounded-full border border-ink px-5 py-2.5 text-sm font-medium transition hover:bg-ink hover:text-white md:inline-flex">Explore books</a>
+      <button id="menu-button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 md:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="menu-icon"><i></i><i></i></span></button>
+    </nav>
+    <div id="mobile-menu" class="mx-4 hidden rounded-3xl border border-ink/10 bg-paper/95 p-6 shadow-2xl backdrop-blur-xl md:hidden">
+      <div class="flex flex-col gap-5 text-lg"><a href="#books" class="mobile-link">Books</a><a href="#about" class="mobile-link">About</a><a href="#authors" class="mobile-link">Authors</a><a href="#contact" class="mobile-link">Contact</a></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="relative flex min-h-screen items-end overflow-hidden pt-28" aria-labelledby="hero-title">
+      <div class="absolute inset-0"></div><div class="hero-glow absolute -right-32 top-16 h-[34rem] w-[34rem] rounded-full bg-blue/10 blur-3xl"></div><div class="hero-grid absolute inset-0 opacity-40"></div>
+      <div class="relative mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 lg:grid-cols-[1.15fr_.85fr] lg:px-10 lg:pb-24">
+        <div class="flex flex-col justify-end">
+          <p class="reveal mb-7 text-xs font-semibold uppercase tracking-[0.28em] text-blue" data-reveal>Independent publishing house · Est. 2026</p>
+          <h1 id="hero-title" class="reveal max-w-5xl font-display text-[clamp(4rem,11vw,9rem)] leading-[.84] tracking-[-.055em]" data-reveal>Books<br><em class="font-normal text-blue">that remain.</em></h1>
+          <div class="reveal mt-10 flex max-w-xl flex-col gap-7 sm:flex-row sm:items-end" data-reveal>
+            <p class="text-base leading-7 text-ink/65">We publish distinctive books by thoughtful people. Ideas worth returning to, stories worth carrying, and words made to outlive the moment.</p>
+            <a href="#books" class="group inline-flex shrink-0 items-center gap-3 text-sm font-semibold">Discover our list <span class="arrow-circle">↘</span></a>
+          </div>
+        </div>
+        <div class="reveal relative flex items-end justify-center lg:justify-end" data-reveal>
+          <div class="book-stage"><div class="book-shadow"></div><div class="book-cover">
+            <div class="book-mark">W</div>
+            <div><p class="text-[10px] uppercase tracking-[.35em] text-white/60">Words Editions</p><h2 class="mt-7 max-w-[10rem] font-display text-4xl leading-[.95] text-white">The Quiet<br>Architecture<br><i>of Time</i></h2></div>
+            <div class="flex items-end justify-between"><span class="text-[9px] uppercase tracking-[.25em] text-white/50">A study in living</span><span class="font-display text-lg text-gold">01</span></div>
+          </div></div>
+        </div>
+      </div>
+      <div class="absolute bottom-7 left-1/2 hidden -translate-x-1/2 items-center gap-3 text-[10px] uppercase tracking-[.25em] text-ink/40 lg:flex"><span class="h-10 w-px bg-ink/20"></span> Scroll to explore</div>
+    </section>
+
+    <section id="books" class="border-y border-line bg-white" aria-labelledby="books-title">
+      <div class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div class="reveal flex flex-col justify-between gap-8 md:flex-row md:items-end" data-reveal><div><p class="eyebrow">Selected catalogue</p><h2 id="books-title" class="mt-4 font-display text-5xl tracking-tight sm:text-6xl">Our books</h2></div><p class="max-w-sm text-sm leading-6 text-ink/55">A small, carefully considered list. Every title is selected for the quality of its thinking, writing, and physical presence.</p></div>
+        <div class="mt-16 grid gap-12 md:grid-cols-3 md:gap-8">
+          <article class="book-card reveal" data-reveal><div class="catalogue-cover cover-one"><span>02</span><strong>FIELD<br>NOTES</strong><small>On making a life</small></div><div class="mt-6 flex items-start justify-between gap-5"><div><p class="text-xs uppercase tracking-[.18em] text-ink/40">Essays · 2026</p><h3 class="mt-2 font-display text-2xl">Field Notes</h3><p class="mt-2 text-sm text-ink/55">Mara Ellison</p></div><span class="mt-1 text-sm text-ink/40">01</span></div></article>
+          <article class="book-card reveal md:translate-y-16" data-reveal><div class="catalogue-cover cover-two"><span>03</span><strong>THE<br>LAST<br>LIGHT</strong><small>A novel by Daniel Vale</small></div><div class="mt-6 flex items-start justify-between gap-5"><div><p class="text-xs uppercase tracking-[.18em] text-ink/40">Fiction · 2026</p><h3 class="mt-2 font-display text-2xl">The Last Light</h3><p class="mt-2 text-sm text-ink/55">Daniel Vale</p></div><span class="mt-1 text-sm text-ink/40">02</span></div></article>
+          <article class="book-card reveal" data-reveal><div class="catalogue-cover cover-three"><span>04</span><strong>HOW<br>WE<br>BEGIN</strong><small>Conversations on hope</small></div><div class="mt-6 flex items-start justify-between gap-5"><div><p class="text-xs uppercase tracking-[.18em] text-ink/40">Culture · 2026</p><h3 class="mt-2 font-display text-2xl">How We Begin</h3><p class="mt-2 text-sm text-ink/55">Amara Cole</p></div><span class="mt-1 text-sm text-ink/40">03</span></div></article>
+        </div>
+        <div class="mt-20 border-t border-line pt-7"><a href="#contact" class="group inline-flex items-center gap-4 text-sm font-semibold">View all publications <span class="transition group-hover:translate-x-1">→</span></a></div>
+      </div>
+    </section>
+
+    <section id="about" class="overflow-hidden bg-ink text-white" aria-labelledby="about-title">
+      <div class="mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-2 lg:items-center lg:px-10 lg:py-32">
+        <div class="reveal" data-reveal><p class="eyebrow text-gold">Why Words</p><h2 id="about-title" class="mt-5 max-w-xl font-display text-5xl leading-tight tracking-tight sm:text-6xl">Publishing with patience.</h2></div>
+        <div class="reveal max-w-xl lg:ml-auto" data-reveal><p class="text-xl leading-9 text-white/75">The publishing world moves quickly. We prefer to move deliberately.</p><p class="mt-7 text-sm leading-7 text-white/45">Words is built around a simple belief: the right book can change the way someone sees a life, a place, or themselves. We work closely with our authors from first manuscript to final page, giving each book the attention it deserves.</p><div class="mt-12 grid grid-cols-2 gap-8 border-t border-white/15 pt-7"><div><strong class="font-display text-4xl text-gold">12</strong><p class="mt-2 text-xs uppercase tracking-[.18em] text-white/40">Titles in progress</p></div><div><strong class="font-display text-4xl text-gold">01</strong><p class="mt-2 text-xs uppercase tracking-[.18em] text-white/40">Purpose: make them matter</p></div></div></div>
+      </div>
+    </section>
+
+    <section id="authors" class="bg-paper" aria-labelledby="authors-title">
+      <div class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div class="reveal" data-reveal><p class="eyebrow">The voices</p><h2 id="authors-title" class="mt-4 font-display text-5xl tracking-tight sm:text-6xl">Our authors</h2></div>
+        <div class="mt-16 divide-y divide-line border-y border-line">
+          <div class="author-row reveal" data-reveal><span>01</span><h3>Mara Ellison</h3><p>Essayist · London</p><span class="author-arrow">↗</span></div>
+          <div class="author-row reveal" data-reveal><span>02</span><h3>Daniel Vale</h3><p>Novelist · Edinburgh</p><span class="author-arrow">↗</span></div>
+          <div class="author-row reveal" data-reveal><span>03</span><h3>Amara Cole</h3><p>Writer &amp; cultural critic · Lagos</p><span class="author-arrow">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-blue text-white" aria-labelledby="contact-title">
+      <div class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div class="reveal max-w-4xl" data-reveal><p class="eyebrow text-white/50">For authors, booksellers &amp; readers</p><h2 id="contact-title" class="mt-5 font-display text-5xl leading-tight tracking-tight sm:text-7xl">Let's make something<br><em class="font-normal text-gold">worth reading.</em></h2><a href="mailto:hello@words-publishing.com" class="mt-12 inline-flex items-center gap-4 border-b border-white/30 pb-3 text-lg transition hover:border-gold hover:text-gold">hello@words-publishing.com <span>↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue px-6 pb-8 text-white/50 lg:px-10"><div class="mx-auto flex max-w-7xl flex-col gap-5 border-t border-white/10 pt-7 text-xs sm:flex-row sm:items-center sm:justify-between"><p>© 2026 Words Publishing. All rights reserved.</p><div class="flex gap-6"><a href="#" class="hover:text-white">Privacy</a><a href="#" class="hover:text-white">Instagram</a><a href="#" class="hover:text-white">Journal</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
